@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BLE_simple_practices" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xwz-2q-99m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WiFi SSID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F5v-2I-Fpf">
+                                <rect key="frame" x="150" y="185" width="75" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="SSID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gmg-Wq-uzj">
+                                <rect key="frame" x="37.5" y="226" width="300" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLL-vY-tyJ">
+                                <rect key="frame" x="150.5" y="276" width="74" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="passwords" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ag2-l0-79b">
+                                <rect key="frame" x="37.5" y="317" width="300" height="33"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a7I-38-DPe">
+                                <rect key="frame" x="37.5" y="450" width="300" height="33.5"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Send WiFi Information">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="sendBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ILD-oG-X0B"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="a7I-38-DPe" firstAttribute="top" secondItem="ag2-l0-79b" secondAttribute="bottom" constant="100" id="1NA-Hu-GeU"/>
+                            <constraint firstItem="a7I-38-DPe" firstAttribute="height" secondItem="ag2-l0-79b" secondAttribute="height" id="3TD-wm-A94"/>
+                            <constraint firstItem="gmg-Wq-uzj" firstAttribute="top" secondItem="F5v-2I-Fpf" secondAttribute="bottom" constant="20" id="4sa-t5-5ct"/>
+                            <constraint firstItem="ag2-l0-79b" firstAttribute="centerY" secondItem="Xwz-2q-99m" secondAttribute="centerY" id="CJd-Z2-Cow"/>
+                            <constraint firstItem="YLL-vY-tyJ" firstAttribute="centerX" secondItem="Xwz-2q-99m" secondAttribute="centerX" id="Cml-PY-wl5"/>
+                            <constraint firstItem="a7I-38-DPe" firstAttribute="centerX" secondItem="Xwz-2q-99m" secondAttribute="centerX" id="GJY-CD-eQK"/>
+                            <constraint firstItem="gmg-Wq-uzj" firstAttribute="width" secondItem="ag2-l0-79b" secondAttribute="width" id="HRn-zr-lOe"/>
+                            <constraint firstItem="ag2-l0-79b" firstAttribute="centerX" secondItem="Xwz-2q-99m" secondAttribute="centerX" id="M0Z-Jw-P9v"/>
+                            <constraint firstItem="F5v-2I-Fpf" firstAttribute="centerX" secondItem="Xwz-2q-99m" secondAttribute="centerX" id="SLH-te-4ak"/>
+                            <constraint firstItem="gmg-Wq-uzj" firstAttribute="centerX" secondItem="Xwz-2q-99m" secondAttribute="centerX" id="Ze2-kz-dcI"/>
+                            <constraint firstItem="ag2-l0-79b" firstAttribute="height" secondItem="Xwz-2q-99m" secondAttribute="height" multiplier="1:20" id="htT-ka-2KY"/>
+                            <constraint firstItem="YLL-vY-tyJ" firstAttribute="top" secondItem="gmg-Wq-uzj" secondAttribute="bottom" constant="20" id="lMh-4y-qh8"/>
+                            <constraint firstItem="ag2-l0-79b" firstAttribute="top" secondItem="YLL-vY-tyJ" secondAttribute="bottom" constant="20" id="wcl-9C-Htg"/>
+                            <constraint firstItem="ag2-l0-79b" firstAttribute="width" secondItem="Xwz-2q-99m" secondAttribute="width" multiplier="4:5" id="yHI-iY-GNt"/>
+                            <constraint firstItem="a7I-38-DPe" firstAttribute="width" secondItem="ag2-l0-79b" secondAttribute="width" id="zbW-9n-h9X"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9VC-08-PhW"/>
+                    </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="ag2-l0-79b" id="KRc-fM-D8b"/>
+                        <outlet property="ssidTextField" destination="gmg-Wq-uzj" id="o3V-Ph-hGN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

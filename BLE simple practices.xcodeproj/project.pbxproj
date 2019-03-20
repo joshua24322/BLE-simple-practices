@@ -12,6 +12,12 @@
 		2D41CDED22429529002529FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D41CDEB22429529002529FF /* Main.storyboard */; };
 		2D41CDEF2242952B002529FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D41CDEE2242952B002529FF /* Assets.xcassets */; };
 		2D41CDF22242952B002529FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D41CDF02242952B002529FF /* LaunchScreen.storyboard */; };
+		2D41CE062242978B002529FF /* WiFi_ap_info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D41CE022242978A002529FF /* WiFi_ap_info.swift */; };
+		2D41CE072242978B002529FF /* DataDealing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D41CE032242978A002529FF /* DataDealing.swift */; };
+		2D41CE082242978B002529FF /* AlertMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D41CE042242978A002529FF /* AlertMessage.swift */; };
+		2D41CE092242978B002529FF /* StringDealing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D41CE052242978B002529FF /* StringDealing.swift */; };
+		2D41CE0C2242985E002529FF /* BluetoothAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D41CE0B2242985E002529FF /* BluetoothAccess.swift */; };
+		2D41CE142242A425002529FF /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 2D41CE132242A425002529FF /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,13 @@
 		2D41CDEE2242952B002529FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D41CDF12242952B002529FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D41CDF32242952B002529FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D41CE022242978A002529FF /* WiFi_ap_info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WiFi_ap_info.swift; sourceTree = "<group>"; };
+		2D41CE032242978A002529FF /* DataDealing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataDealing.swift; sourceTree = "<group>"; };
+		2D41CE042242978A002529FF /* AlertMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertMessage.swift; sourceTree = "<group>"; };
+		2D41CE052242978B002529FF /* StringDealing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringDealing.swift; sourceTree = "<group>"; };
+		2D41CE0B2242985E002529FF /* BluetoothAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothAccess.swift; sourceTree = "<group>"; };
+		2D41CE1022429DA5002529FF /* BLE simple practices.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "BLE simple practices.entitlements"; sourceTree = "<group>"; };
+		2D41CE132242A425002529FF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,8 +51,10 @@
 		2D41CDDB22429529002529FF = {
 			isa = PBXGroup;
 			children = (
+				2D41CE132242A425002529FF /* .gitignore */,
 				2D41CDE622429529002529FF /* BLE simple practices */,
 				2D41CDE522429529002529FF /* Products */,
+				2D41CE0D22429DA5002529FF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +69,59 @@
 		2D41CDE622429529002529FF /* BLE simple practices */ = {
 			isa = PBXGroup;
 			children = (
+				2D41CE1022429DA5002529FF /* BLE simple practices.entitlements */,
+				2D41CDF92242967E002529FF /* Extension */,
+				2D41CE0A2242983B002529FF /* BLE Model */,
+				2D41CE122242A2E9002529FF /* View */,
+				2D41CE112242A2C7002529FF /* Controller */,
 				2D41CDE722429529002529FF /* AppDelegate.swift */,
-				2D41CDE922429529002529FF /* ViewController.swift */,
-				2D41CDEB22429529002529FF /* Main.storyboard */,
 				2D41CDEE2242952B002529FF /* Assets.xcassets */,
 				2D41CDF02242952B002529FF /* LaunchScreen.storyboard */,
 				2D41CDF32242952B002529FF /* Info.plist */,
 			);
 			path = "BLE simple practices";
+			sourceTree = "<group>";
+		};
+		2D41CDF92242967E002529FF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2D41CE042242978A002529FF /* AlertMessage.swift */,
+				2D41CE032242978A002529FF /* DataDealing.swift */,
+				2D41CE052242978B002529FF /* StringDealing.swift */,
+				2D41CE022242978A002529FF /* WiFi_ap_info.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		2D41CE0A2242983B002529FF /* BLE Model */ = {
+			isa = PBXGroup;
+			children = (
+				2D41CE0B2242985E002529FF /* BluetoothAccess.swift */,
+			);
+			path = "BLE Model";
+			sourceTree = "<group>";
+		};
+		2D41CE0D22429DA5002529FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2D41CE112242A2C7002529FF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2D41CDE922429529002529FF /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		2D41CE122242A2E9002529FF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2D41CDEB22429529002529FF /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +156,11 @@
 				TargetAttributes = {
 					2D41CDE322429529002529FF = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.WAC = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -122,6 +187,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D41CE142242A425002529FF /* .gitignore in Resources */,
 				2D41CDF22242952B002529FF /* LaunchScreen.storyboard in Resources */,
 				2D41CDEF2242952B002529FF /* Assets.xcassets in Resources */,
 				2D41CDED22429529002529FF /* Main.storyboard in Resources */,
@@ -135,7 +201,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D41CE0C2242985E002529FF /* BluetoothAccess.swift in Sources */,
+				2D41CE062242978B002529FF /* WiFi_ap_info.swift in Sources */,
+				2D41CE082242978B002529FF /* AlertMessage.swift in Sources */,
 				2D41CDEA22429529002529FF /* ViewController.swift in Sources */,
+				2D41CE092242978B002529FF /* StringDealing.swift in Sources */,
+				2D41CE072242978B002529FF /* DataDealing.swift in Sources */,
 				2D41CDE822429529002529FF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,7 +284,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -268,7 +339,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
