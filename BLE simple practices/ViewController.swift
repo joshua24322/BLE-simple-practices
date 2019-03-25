@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
-    let bluetoothManager = BluetoothManager.shared
+    weak var bluetoothManager = BluetoothManager.shared
     let ssidArray = getSSID()
     
     @IBOutlet weak var ssidTextField: UITextField!
@@ -18,7 +18,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func sendBtn(_ sender: UIButton) {
         checkEnterData { [weak self] in
             guard let weakSelf = self else { return }
-            weakSelf.bluetoothManager.sendData(weakSelf.ssidTextField.text, weakSelf.passwordTextField.text)
+            weakSelf.bluetoothManager?.sendData(weakSelf.ssidTextField.text, weakSelf.passwordTextField.text)
         }
     }
     
