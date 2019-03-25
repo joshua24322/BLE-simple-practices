@@ -69,7 +69,7 @@ extension String {
             case char where char > 0x40 && char < 0x47:
                 byteArray += [(char-0x40)+9]
             default:
-                print("输入错误")
+                print("input error")
                 break
             }
         }

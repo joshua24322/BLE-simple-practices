@@ -29,7 +29,7 @@ class BluetoothManager: NSObject {
     private override init() {
         super.init()
         // Initialize CBCentralManager
-        centralManager = CBCentralManager.init(delegate: self, queue: DispatchQueue.main)
+        centralManager = CBCentralManager.init(delegate: self, queue: nil) // defaule main queue
     }
     
     private func isPaired() -> Bool {

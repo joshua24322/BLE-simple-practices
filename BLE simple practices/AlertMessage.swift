@@ -19,8 +19,10 @@ extension UIViewController {
             okCompletion()
         }
         alertController.addAction(okAction)
-        self.present(alertController, animated: true) {
-            presentCompletion()
+        DispatchQueue.main.async {
+            self.present(alertController, animated: true) {
+                presentCompletion()
+            }
         }
     }
     
@@ -34,8 +36,10 @@ extension UIViewController {
         }
         alertController.addAction(okAction)
         alertController.addAction(cancelAction)
-        self.present(alertController, animated: true) {
-            presentCompletion()
+        DispatchQueue.main.async {
+            self.present(alertController, animated: true) {
+                presentCompletion()
+            }
         }
     }
 }
