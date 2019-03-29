@@ -25,6 +25,7 @@ class BluetoothManager: NSObject {
     var connectingPeripheral: CBPeripheral?
     var savedCharacteristic : CBCharacteristic?
     let userDefaults = UserDefaults.standard
+    var group = DispatchGroup()
     
     private override init() {
         super.init()
@@ -68,7 +69,18 @@ class BluetoothManager: NSObject {
         connectingPeripheral?.writeValue(data, for: characteristic, type: .withResponse)
     }
     
-    func sendData(_ ssid: String?, _ password: String?) {
+    private func launchData(_ lhs: [UInt8]) {
+        group.enter()
+        DispatchQueue.main.asyncAfter(deadline: .now()) {
+            var data = Data()
+            data.append(lhs, count: lhs.count)
+            print("🔍🔍🔍🔍🔍🔍\ndataToTrans: \(data)")
+            self.startWritingValue(data)
+            self.group.leave()
+        }
+    }
+    
+    func sendData(_ ssid: String?, _ password: String?, success: @escaping(() -> ())) {
         
         let timestamp = "000001341470" // unified plain text for example
         var ssidChip1: String?
@@ -133,46 +145,14 @@ class BluetoothManager: NSObject {
         /// Currently, the issue of missing data is not considered.
         ///
         
-        DispatchQueue.main.asyncAfter(deadline: .now()) {
-            var data = Data()
-            data.append(emtSsidData1, count: emtSsidData1.count)
-            print("🔍🔍🔍🔍🔍🔍\ndataToTrans: \(data)")
-            self.startWritingValue(data)
-        }
-        
-        DispatchQueue.main.asyncAfter(deadline: .now()) {
-            var data = Data()
-            data.append(emtSsidData2, count: emtSsidData2.count)
-            print("🔍🔍🔍🔍🔍🔍\ndataToTrans: \(data)")
-            self.startWritingValue(data)
-        }
-        
-        DispatchQueue.main.asyncAfter(deadline: .now()) {
-            var data = Data()
-            data.append(emtSsidData3, count: emtSsidData3.count)
-            print("🔍🔍🔍🔍🔍🔍\ndataToTrans: \(data)")
-            self.startWritingValue(data)
-        }
-        
-        DispatchQueue.main.asyncAfter(deadline: .now()) {
-            var data = Data()
-            data.append(emtPasswordData1, count: emtPasswordData1.count)
-            print("🔍🔍🔍🔍🔍🔍\ndataToTrans: \(data)")
-            self.startWritingValue(data)
-        }
-        
-        DispatchQueue.main.asyncAfter(deadline: .now()) {
-            var data = Data()
-            data.append(emtPasswordData2, count: emtPasswordData2.count)
-            print("🔍🔍🔍🔍🔍🔍\ndataToTrans: \(data)")
-            self.startWritingValue(data)
-        }
-        
-        DispatchQueue.main.asyncAfter(deadline: .now()) {
-            var data = Data()
-            data.append(emtPasswordData3, count: emtPasswordData3.count)
-            print("🔍🔍🔍🔍🔍🔍\ndataToTrans: \(data)")
-            self.startWritingValue(data)
+        launchData(emtSsidData1)
+        launchData(emtSsidData2)
+        launchData(emtSsidData3)
+        launchData(emtPasswordData1)
+        launchData(emtPasswordData2)
+        launchData(emtPasswordData3)
+        group.notify(queue: .main) {
+            success()
         }
     }
 }
