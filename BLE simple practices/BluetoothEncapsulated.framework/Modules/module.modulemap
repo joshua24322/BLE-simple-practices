@@ -1,0 +1,11 @@
+framework module BluetoothEncapsulated {
+  umbrella header "BluetoothEncapsulated.h"
+
+  export *
+  module * { export * }
+}
+
+module BluetoothEncapsulated.Swift {
+    header "BluetoothEncapsulated-Swift.h"
+    requires objc
+}

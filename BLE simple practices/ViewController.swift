@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Dialog
+import BluetoothEncapsulated
 
 class ViewController: UIViewController, UITextFieldDelegate {
     

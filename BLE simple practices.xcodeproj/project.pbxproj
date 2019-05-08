@@ -7,20 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D27ABF8228189270047DE21 /* Dialog.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D27ABF6228189270047DE21 /* Dialog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D27AC0522818A4F0047DE21 /* AlertMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D27AC0422818A4F0047DE21 /* AlertMessage.swift */; };
+		2D27AC1222819C3F0047DE21 /* Dialog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D27ABF4228189270047DE21 /* Dialog.framework */; };
 		2D41CDE822429529002529FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D41CDE722429529002529FF /* AppDelegate.swift */; };
 		2D41CDEA22429529002529FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D41CDE922429529002529FF /* ViewController.swift */; };
 		2D41CDED22429529002529FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D41CDEB22429529002529FF /* Main.storyboard */; };
 		2D41CDEF2242952B002529FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D41CDEE2242952B002529FF /* Assets.xcassets */; };
 		2D41CDF22242952B002529FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D41CDF02242952B002529FF /* LaunchScreen.storyboard */; };
 		2D41CE062242978B002529FF /* WiFi_ap_info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D41CE022242978A002529FF /* WiFi_ap_info.swift */; };
-		2D41CE072242978B002529FF /* DataDealing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D41CE032242978A002529FF /* DataDealing.swift */; };
-		2D41CE082242978B002529FF /* AlertMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D41CE042242978A002529FF /* AlertMessage.swift */; };
 		2D41CE092242978B002529FF /* StringDealing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D41CE052242978B002529FF /* StringDealing.swift */; };
-		2D41CE0C2242985E002529FF /* BluetoothAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D41CE0B2242985E002529FF /* BluetoothAccess.swift */; };
 		2D41CE142242A425002529FF /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 2D41CE132242A425002529FF /* .gitignore */; };
+		A504D467228273ED00026314 /* BluetoothEncapsulated.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A504D466228273ED00026314 /* BluetoothEncapsulated.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2D27ABF9228189270047DE21 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D41CDDC22429529002529FF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D27ABF3228189270047DE21;
+			remoteInfo = Dialog;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2D27AC00228189270047DE21 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		2D27ABF4228189270047DE21 /* Dialog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Dialog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D27ABF6228189270047DE21 /* Dialog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dialog.h; sourceTree = "<group>"; };
+		2D27ABF7228189270047DE21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D27AC0422818A4F0047DE21 /* AlertMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertMessage.swift; sourceTree = "<group>"; };
 		2D41CDE422429529002529FF /* BLE simple practices.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BLE simple practices.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D41CDE722429529002529FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D41CDE922429529002529FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,30 +57,48 @@
 		2D41CDF12242952B002529FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D41CDF32242952B002529FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D41CE022242978A002529FF /* WiFi_ap_info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WiFi_ap_info.swift; sourceTree = "<group>"; };
-		2D41CE032242978A002529FF /* DataDealing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataDealing.swift; sourceTree = "<group>"; };
-		2D41CE042242978A002529FF /* AlertMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertMessage.swift; sourceTree = "<group>"; };
 		2D41CE052242978B002529FF /* StringDealing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringDealing.swift; sourceTree = "<group>"; };
-		2D41CE0B2242985E002529FF /* BluetoothAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BluetoothAccess.swift; sourceTree = "<group>"; };
 		2D41CE1022429DA5002529FF /* BLE simple practices.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "BLE simple practices.entitlements"; sourceTree = "<group>"; };
 		2D41CE132242A425002529FF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		A504D466228273ED00026314 /* BluetoothEncapsulated.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BluetoothEncapsulated.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2D41CDE122429529002529FF /* Frameworks */ = {
+		2D27ABF1228189270047DE21 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2D41CDE122429529002529FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A504D467228273ED00026314 /* BluetoothEncapsulated.framework in Frameworks */,
+				2D27AC1222819C3F0047DE21 /* Dialog.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D27ABF5228189270047DE21 /* Dialog */ = {
+			isa = PBXGroup;
+			children = (
+				2D27ABF6228189270047DE21 /* Dialog.h */,
+				2D27ABF7228189270047DE21 /* Info.plist */,
+				2D27AC0422818A4F0047DE21 /* AlertMessage.swift */,
+			);
+			path = Dialog;
+			sourceTree = "<group>";
+		};
 		2D41CDDB22429529002529FF = {
 			isa = PBXGroup;
 			children = (
 				2D41CE132242A425002529FF /* .gitignore */,
 				2D41CDE622429529002529FF /* BLE simple practices */,
+				2D27ABF5228189270047DE21 /* Dialog */,
 				2D41CDE522429529002529FF /* Products */,
 				2D41CE0D22429DA5002529FF /* Frameworks */,
 			);
@@ -62,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				2D41CDE422429529002529FF /* BLE simple practices.app */,
+				2D27ABF4228189270047DE21 /* Dialog.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,8 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				2D41CE1022429DA5002529FF /* BLE simple practices.entitlements */,
+				A504D466228273ED00026314 /* BluetoothEncapsulated.framework */,
 				2D41CDF92242967E002529FF /* Extension */,
-				2D41CE0A2242983B002529FF /* BLE Model */,
 				2D41CE122242A2E9002529FF /* View */,
 				2D41CE112242A2C7002529FF /* Controller */,
 				2D41CDE722429529002529FF /* AppDelegate.swift */,
@@ -85,20 +132,10 @@
 		2D41CDF92242967E002529FF /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				2D41CE042242978A002529FF /* AlertMessage.swift */,
-				2D41CE032242978A002529FF /* DataDealing.swift */,
 				2D41CE052242978B002529FF /* StringDealing.swift */,
 				2D41CE022242978A002529FF /* WiFi_ap_info.swift */,
 			);
 			name = Extension;
-			sourceTree = "<group>";
-		};
-		2D41CE0A2242983B002529FF /* BLE Model */ = {
-			isa = PBXGroup;
-			children = (
-				2D41CE0B2242985E002529FF /* BluetoothAccess.swift */,
-			);
-			path = "BLE Model";
 			sourceTree = "<group>";
 		};
 		2D41CE0D22429DA5002529FF /* Frameworks */ = {
@@ -126,7 +163,36 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		2D27ABEF228189270047DE21 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D27ABF8228189270047DE21 /* Dialog.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		2D27ABF3228189270047DE21 /* Dialog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D27ABFD228189270047DE21 /* Build configuration list for PBXNativeTarget "Dialog" */;
+			buildPhases = (
+				2D27ABEF228189270047DE21 /* Headers */,
+				2D27ABF0228189270047DE21 /* Sources */,
+				2D27ABF1228189270047DE21 /* Frameworks */,
+				2D27ABF2228189270047DE21 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Dialog;
+			productName = Dialog;
+			productReference = 2D27ABF4228189270047DE21 /* Dialog.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		2D41CDE322429529002529FF /* BLE simple practices */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D41CDF62242952B002529FF /* Build configuration list for PBXNativeTarget "BLE simple practices" */;
@@ -134,10 +200,12 @@
 				2D41CDE022429529002529FF /* Sources */,
 				2D41CDE122429529002529FF /* Frameworks */,
 				2D41CDE222429529002529FF /* Resources */,
+				2D27AC00228189270047DE21 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2D27ABFA228189270047DE21 /* PBXTargetDependency */,
 			);
 			name = "BLE simple practices";
 			productName = "BLE simple practices";
@@ -154,6 +222,10 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Joshua Chang";
 				TargetAttributes = {
+					2D27ABF3228189270047DE21 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+					};
 					2D41CDE322429529002529FF = {
 						CreatedOnToolsVersion = 10.1;
 						SystemCapabilities = {
@@ -178,11 +250,19 @@
 			projectRoot = "";
 			targets = (
 				2D41CDE322429529002529FF /* BLE simple practices */,
+				2D27ABF3228189270047DE21 /* Dialog */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2D27ABF2228189270047DE21 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2D41CDE222429529002529FF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -197,21 +277,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2D27ABF0228189270047DE21 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D27AC0522818A4F0047DE21 /* AlertMessage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2D41CDE022429529002529FF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D41CE0C2242985E002529FF /* BluetoothAccess.swift in Sources */,
 				2D41CE062242978B002529FF /* WiFi_ap_info.swift in Sources */,
-				2D41CE082242978B002529FF /* AlertMessage.swift in Sources */,
 				2D41CDEA22429529002529FF /* ViewController.swift in Sources */,
 				2D41CE092242978B002529FF /* StringDealing.swift in Sources */,
-				2D41CE072242978B002529FF /* DataDealing.swift in Sources */,
 				2D41CDE822429529002529FF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2D27ABFA228189270047DE21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D27ABF3228189270047DE21 /* Dialog */;
+			targetProxy = 2D27ABF9228189270047DE21 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2D41CDEB22429529002529FF /* Main.storyboard */ = {
@@ -233,6 +326,67 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2D27ABFE228189270047DE21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9RRJGR8P4P;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Dialog/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JoshuaChang.Dialog;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2D27ABFF228189270047DE21 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9RRJGR8P4P;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Dialog/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.JoshuaChang.Dialog;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		2D41CDF42242952B002529FF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -352,9 +506,24 @@
 		2D41CDF72242952B002529FF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9RRJGR8P4P;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BLE\\ simple\\ practices",
+					"$(PROJECT_DIR)/BLE\\ simple\\ practices",
+					"$(PROJECT_DIR)/BLE\\ simple\\ practices",
+					"$(PROJECT_DIR)/BLE\\ simple\\ practices",
+					"$(PROJECT_DIR)/BLE\\ simple\\ practices",
+					"$(PROJECT_DIR)/BLE\\ simple\\ practices",
+					"$(PROJECT_DIR)/BLE\\ simple\\ practices",
+					"$(PROJECT_DIR)/BLE\\ simple\\ practices",
+					"$(PROJECT_DIR)/BLE\\ simple\\ practices",
+					"$(PROJECT_DIR)/BLE\\ simple\\ practices",
+					"$(PROJECT_DIR)/BLE\\ simple\\ practices",
+				);
 				INFOPLIST_FILE = "BLE simple practices/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -370,9 +539,24 @@
 		2D41CDF82242952B002529FF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9RRJGR8P4P;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BLE\\ simple\\ practices",
+					"$(PROJECT_DIR)/BLE\\ simple\\ practices",
+					"$(PROJECT_DIR)/BLE\\ simple\\ practices",
+					"$(PROJECT_DIR)/BLE\\ simple\\ practices",
+					"$(PROJECT_DIR)/BLE\\ simple\\ practices",
+					"$(PROJECT_DIR)/BLE\\ simple\\ practices",
+					"$(PROJECT_DIR)/BLE\\ simple\\ practices",
+					"$(PROJECT_DIR)/BLE\\ simple\\ practices",
+					"$(PROJECT_DIR)/BLE\\ simple\\ practices",
+					"$(PROJECT_DIR)/BLE\\ simple\\ practices",
+					"$(PROJECT_DIR)/BLE\\ simple\\ practices",
+				);
 				INFOPLIST_FILE = "BLE simple practices/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -388,6 +572,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2D27ABFD228189270047DE21 /* Build configuration list for PBXNativeTarget "Dialog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D27ABFE228189270047DE21 /* Debug */,
+				2D27ABFF228189270047DE21 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D41CDDF22429529002529FF /* Build configuration list for PBXProject "BLE simple practices" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -1,8 +1,8 @@
 //
 //  AlertMessage.swift
-//  BLE simple practices
+//  Dialog
 //
-//  Created by Joshua Chang on 2019/2/26.
+//  Created by Joshua Chang on 2019/5/7.
 //  Copyright © 2019 Joshua Chang. All rights reserved.
 //
 
@@ -13,7 +13,7 @@ extension UIViewController {
     
     // https://gist.github.com/joshua24322/2b48a026452e1184fce85ef68f18014e
     
-    func callbackAlert(title: String, message: String? = nil, okCompletion: @escaping (() -> ()) = {}, presentCompletion: @escaping (() -> ()) = {}) {
+    public func callbackAlert(title: String, message: String? = nil, okCompletion: @escaping (() -> ()) = {}, presentCompletion: @escaping (() -> ()) = {}) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default) { (action: UIAlertAction) in
             okCompletion()
@@ -26,7 +26,7 @@ extension UIViewController {
         }
     }
     
-    func callbackDialog(title: String, message: String? = nil, okCompletion: @escaping (() -> ()) = {}, cancelCompletion: @escaping (() -> ()) = {}, presentCompletion: @escaping (() -> ()) = {}) {
+    public func callbackDialog(title: String, message: String? = nil, okCompletion: @escaping (() -> ()) = {}, cancelCompletion: @escaping (() -> ()) = {}, presentCompletion: @escaping (() -> ()) = {}) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default) { (action: UIAlertAction) in
             okCompletion()
