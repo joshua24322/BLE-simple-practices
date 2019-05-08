@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>UIViewController Extension Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Extension/UIViewController" class="dashAnchor"></a>
+    <a title="UIViewController Extension Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        UIViewController Extension Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/UIViewController.html">UIViewController</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>UIViewController</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">UIViewController</span> <span class="p">:</span> <span class="kt">UIResponder</span><span class="p">,</span> <span class="kt">NSCoding</span><span class="p">,</span> <span class="kt">UIAppearanceContainer</span><span class="p">,</span> <span class="kt">UITraitEnvironment</span><span class="p">,</span> <span class="kt">UIContentContainer</span><span class="p">,</span> <span class="kt">UIFocusEnvironment</span></code></pre>
+
+                </div>
+              </div>
+            <p>This is flexible to deal the completion handler.</p>
+
+<ul>
+<li>gist: <a href="https://gist.github.com/joshua24322/2b48a026452e1184fce85ef68f18014e">https://gist.github.com/joshua24322/2b48a026452e1184fce85ef68f18014e</a></li>
+</ul>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So16UIViewControllerC6DialogE13callbackAlert5title7message12okCompletion07presentI0ySS_SSSgyycyyctF"></a>
+                    <a name="//apple_ref/swift/Method/callbackAlert(title:message:okCompletion:presentCompletion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So16UIViewControllerC6DialogE13callbackAlert5title7message12okCompletion07presentI0ySS_SSSgyycyyctF">callbackAlert(title:message:okCompletion:presentCompletion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+<ul>
+<li>may you wanna pure message alert:</li>
+</ul>
+<h3 id='usage-example' class='heading'>Usage Example:</h3>
+<pre class="highlight swift"><code><span class="nf">callbackAlert</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="s">"message"</span><span class="p">)</span>
+<span class="nf">callbackAlert</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="s">"message"</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"message"</span><span class="p">)</span>
+</code></pre>
+
+<ul>
+<li>or you wanna the alert message do something in completion handler:
+(the second parameter which message could be nil)</li>
+</ul>
+<h3 id='usage-example' class='heading'>Usage Example:</h3>
+<pre class="highlight swift"><code><span class="nf">callbackAlert</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="s">"message"</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">okCompletion</span><span class="p">:</span> <span class="p">{</span>
+   <span class="c1">// code here</span>
+<span class="p">})</span> <span class="p">{</span>
+   <span class="c1">// code here</span>
+<span class="p">}</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">callbackAlert</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">okCompletion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="p">())</span> <span class="o">=</span> <span class="p">{},</span> <span class="nv">presentCompletion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="p">())</span> <span class="o">=</span> <span class="p">{})</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So16UIViewControllerC6DialogE08callbackC05title7message12okCompletion06cancelH007presentH0ySS_SSSgyycyycyyctF"></a>
+                    <a name="//apple_ref/swift/Method/callbackDialog(title:message:okCompletion:cancelCompletion:presentCompletion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So16UIViewControllerC6DialogE08callbackC05title7message12okCompletion06cancelH007presentH0ySS_SSSgyycyycyyctF">callbackDialog(title:message:okCompletion:cancelCompletion:presentCompletion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+<ul>
+<li>may you wanna pure message dialog:</li>
+</ul>
+<h3 id='usage-example' class='heading'>Usage Example:</h3>
+<pre class="highlight swift"><code><span class="nf">callbackDialog</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="s">"message"</span><span class="p">)</span>
+<span class="nf">callbackDialog</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="s">"message"</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"message"</span><span class="p">)</span>
+</code></pre>
+
+<ul>
+<li>you can ignore any one completion handler by @escaping (() -&gt; ()) = {}
+(ignore the okCompletion and the presentCompletion)</li>
+</ul>
+<h3 id='usage-example' class='heading'>Usage Example:</h3>
+<pre class="highlight swift"><code><span class="nf">callbackDialog</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="s">"message"</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="s">"message"</span><span class="p">,</span> <span class="nv">cancelCompletion</span><span class="p">:</span> <span class="p">{</span>
+   <span class="c1">// code here</span>
+<span class="p">})</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">callbackDialog</span><span class="p">(</span><span class="nv">title</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">message</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">okCompletion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="p">())</span> <span class="o">=</span> <span class="p">{},</span> <span class="nv">cancelCompletion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="p">())</span> <span class="o">=</span> <span class="p">{},</span> <span class="nv">presentCompletion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(()</span> <span class="o">-&gt;</span> <span class="p">())</span> <span class="o">=</span> <span class="p">{})</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-05-08)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
