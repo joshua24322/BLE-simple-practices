@@ -12,6 +12,7 @@ import BluetoothEncapsulated
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
+    /// declare the BluetoothEncapsulated singleton
     weak var bluetoothManager = BluetoothManager.shared
     let ssidArray = getSSID()
     

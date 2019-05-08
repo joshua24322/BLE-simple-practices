@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 /**
- This is flexible to deal the completion handler.
+ This simple framework is flexible to deal the completion handler.
  
  * gist: https://gist.github.com/joshua24322/2b48a026452e1184fce85ef68f18014e
 */

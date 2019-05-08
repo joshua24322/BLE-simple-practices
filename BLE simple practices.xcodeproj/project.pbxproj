@@ -118,7 +118,7 @@
 			children = (
 				2D41CE1022429DA5002529FF /* BLE simple practices.entitlements */,
 				A504D466228273ED00026314 /* BluetoothEncapsulated.framework */,
-				2D41CDF92242967E002529FF /* Extension */,
+				A504E0C52282E9C800026314 /* Extension */,
 				2D41CE122242A2E9002529FF /* View */,
 				2D41CE112242A2C7002529FF /* Controller */,
 				2D41CDE722429529002529FF /* AppDelegate.swift */,
@@ -127,15 +127,6 @@
 				2D41CDF32242952B002529FF /* Info.plist */,
 			);
 			path = "BLE simple practices";
-			sourceTree = "<group>";
-		};
-		2D41CDF92242967E002529FF /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				2D41CE052242978B002529FF /* StringDealing.swift */,
-				2D41CE022242978A002529FF /* WiFi_ap_info.swift */,
-			);
-			name = Extension;
 			sourceTree = "<group>";
 		};
 		2D41CE0D22429DA5002529FF /* Frameworks */ = {
@@ -159,6 +150,15 @@
 				2D41CDEB22429529002529FF /* Main.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		A504E0C52282E9C800026314 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2D41CE052242978B002529FF /* StringDealing.swift */,
+				2D41CE022242978A002529FF /* WiFi_ap_info.swift */,
+			);
+			name = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
